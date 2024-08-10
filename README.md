@@ -1,4 +1,4 @@
 Home Page - Gihan 
 Recipe Page- Twisha
-Contact Page- Deepth
+Contact Page- Deep
 About Page- Rajini
