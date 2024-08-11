@@ -66,8 +66,8 @@ main {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     padding-top: 60px;
 }
 
@@ -99,6 +99,7 @@ main {
     text-decoration: none;
     cursor: pointer;
 }
+
 footer {
     background: #333;
     color: #fff;
@@ -119,11 +120,15 @@ footer {
     min-width: 250px;
 }
 
-.footer-address, .footer-hours, .footer-map {
+.footer-address,
+.footer-hours,
+.footer-map {
     color: #fff;
 }
 
-.footer-address h3, .footer-hours h3, .footer-map h3 {
+.footer-address h3,
+.footer-hours h3,
+.footer-map h3 {
     margin-top: 0;
 }
 
@@ -209,6 +214,27 @@ footer {
     height: 150px;
 }
 
+/* Theme Switcher Styles */
+body.dark-theme {
+    background-color: #222;
+    color: #ddd;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #111;
+}
+
+body.dark-theme a {
+    color: #ff6600;
+}
+
+body.dark-theme .modal-content {
+    background-color: #333;
+    color: #ddd;
+}
+
+
 /* Contact Form */
 form {
     max-width: 600px;
@@ -220,7 +246,8 @@ form label {
     margin: 10px 0 5px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
