@@ -1,10 +1,10 @@
 // Example JavaScript code for the home page
 document.addEventListener('DOMContentLoaded', () => {
     const featuredRecipes = [
-        { name: 'Spaghetti Carbonara', img: 'images/recipe1.jpg' },
-        { name: 'Chicken Alfredo', img: 'images/recipe2.jpg' },
-        { name: 'Beef Stroganoff', img: 'images/recipe3.jpg' },
-        { name: 'Vegetarian Chili', img: 'images/recipe4.jpg' }
+        { name: 'Beef Stroganoff', img: 'images/Beef-Stroganoff.jpg' },
+        { name: 'Stirfried Vegetables', img: 'images/stirfried-vegetables.jpg' },
+        { name: 'Garlic Shrimp', img: 'images/garlic-Shrimp.jpg' },
+        { name: 'Mango Smoothie', img: 'images/mango-smoothie.jpg' }
     ];
 
     const featuredContainer = document.getElementById('featured-recipes');

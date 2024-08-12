@@ -1,9 +1,11 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Header Styles */
 header {
     background: #333;
     color: #fff;
@@ -54,6 +56,7 @@ main {
     margin-bottom: 70px;
 }
 
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -134,6 +137,7 @@ footer {
     border-radius: 5px;
 }
 
+/* Hero Section */
 #hero {
     background: url('../images/hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
@@ -192,108 +196,6 @@ footer {
     width: calc(25% - 40px);
 }
 
-/* Quiz Page Styles */
-
-#quiz-container {
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-#question-container {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.question {
-    font-size: 1.4em;
-    margin-bottom: 20px;
-}
-
-.options {
-    list-style: none;
-    padding: 0;
-}
-
-.options li {
-    margin: 15px 0;
-}
-
-.options li label {
-    cursor: pointer;
-    font-size: 1.2em;
-}
-
-#next-button,
-#retry-button {
-    padding: 12px 25px;
-    margin-top: 20px;
-    background: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
-    transition: background 0.3s ease;
-}
-
-#next-button:hover,
-#retry-button:hover {
-    background: #e55b00;
-}
-
-#result-container {
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-#rating-container {
-    margin-top: 20px;
-}
-
-#stars {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.star {
-    font-size: 2.5em;
-    color: #ccc;
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.star.filled {
-    color: #ff6600;
-    transform: scale(1.1);
-}
-
-.star.hover,
-.star.selected {
-    color: #e55b00;
-}
-
-#rating-message {
-    margin-top: 15px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #333;
-}
-
-.slide {
-    display: none;
-    transition: opacity 0.5s ease-in-out;
-}
-
-
-
 /* About Section */
 #accordion {
     width: 80%;
@@ -330,6 +232,7 @@ footer {
     height: 150px;
 }
 
+<<<<<<< HEAD
 /* Modal Styles */
 .modal {
     display: none;
@@ -360,6 +263,9 @@ footer {
     cursor: pointer;
 }
 
+=======
+/* Theme Switcher Styles */
+>>>>>>> parent of d81f996 (Add quiz page)
 body.dark-theme {
     background-color: #222;
     color: #ddd;
@@ -410,9 +316,7 @@ form label {
     color: red;
 }
 
-form input,
-form textarea,
-form select {
+form input, form textarea, form select {
     width: 100%;
     padding: 6px;
     margin-bottom: 15px;
@@ -424,9 +328,7 @@ form select {
     transition: all 0.3s ease;
 }
 
-form input:focus,
-form textarea:focus,
-form select:focus {
+form input:focus, form textarea:focus, form select:focus {
     border-color: orange;
     box-shadow: 0 0 10px orange;
     outline: none;
@@ -472,8 +374,7 @@ input[type="file"] {
     border: none;
 }
 
-#success-message,
-#error-message {
+#success-message, #error-message {
     margin-top: 15px;
     padding: 15px;
     border-radius: 6px;
@@ -510,9 +411,7 @@ input[type="file"] {
         padding: 15px;
     }
 
-    form input,
-    form textarea,
-    form select {
+    form input, form textarea, form select {
         padding: 10px;
     }
 
