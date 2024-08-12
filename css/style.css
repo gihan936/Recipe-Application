@@ -502,6 +502,15 @@ body.dark-theme .modal-content {
 }
 
 /* Contact page*/
+
+.form-heading{
+    text-align: center;
+}
+
+.form-description{
+    text-align: center;
+}
+
 form {
     max-width: 700px;
     margin: 40px auto;
