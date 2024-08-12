@@ -67,4 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'none';
         }
     });
+
+    // Handle Explore Recipes button click
+    const exploreButton = document.getElementById('explore');
+    
+    exploreButton.addEventListener('click', () => {
+        window.location.href = 'recipes.html';
+    });
 });
