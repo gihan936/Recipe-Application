@@ -235,32 +235,138 @@ body.dark-theme .modal-content {
 }
 
 
-/* Contact Form */
+/* Contact Us Form */
 form {
-    max-width: 600px;
-    margin: auto;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #f3f4f6, #e2e2e2);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 form label {
     display: block;
-    margin: 10px 0 5px;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #444;
+    font-size: 1.1em;
 }
 
-form input,
-form textarea {
+.required {
+    color: red;
+}
+
+form input, form textarea, form select {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    border-color: orange;
+    box-shadow: 0 0 10px orange;
+    outline: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875em;
+    margin-bottom: 15px;
 }
 
 form button {
-    padding: 10px 20px;
-    background: #ff6600;
-    color: #fff;
+    padding: 12px 25px;
+    color: orange;
+    background-color: white;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
+    margin-right: 15px;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form button:hover {
-    background: #e55b00;
+    color: white;
+    background-color: orange;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#reset-button {
+    background: white;
+    color: red;
+}
+
+#reset-button:hover {
+    color: white;
+    background: red;
+}
+
+input[type="file"] {
+    padding: 0;
+    border: none;
+}
+
+#success-message, #error-message {
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 1em;
+    text-align: center;
+}
+
+#success-message {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#error-message {
+    background: rgb(236, 187, 187);
+    color: red;
+    border: 1px solid red;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: orange;
+    color: #fff;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    form input, form textarea, form select {
+        padding: 10px;
+    }
+
+    form button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
 }
