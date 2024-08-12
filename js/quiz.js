@@ -64,8 +64,14 @@ $(document).ready(function() {
     function displayResult() {
         $('#question-container').hide(); 
         $('#next-button').hide(); 
-        $('#result-container').show(); 
+        $('#result-container').show();
+        $('#quit-button').hide();
         $('#score').text(score); 
+    }
+
+    // Function to handle quitting the quiz
+    function quitQuiz() {
+        window.history.back();
     }
 
     // Function to reset quiz for retry
@@ -75,6 +81,7 @@ $(document).ready(function() {
         $('#result-container').hide(); 
         $('#question-container').show(); 
         $('#next-button').show(); 
+        $('#quit-button').show();
         shuffledData = [...quizData]; 
         shuffle(shuffledData);
         loadQuestion(); 
@@ -84,6 +91,8 @@ $(document).ready(function() {
         $('#rating-message').text(''); 
     }
 
+    // Event listener for the 'Quit' button
+    $('#quit-button').on('click', quitQuiz);
     // Event listener for the 'Next' button
     $('#next-button').on('click', checkAnswer);
     // Event listener for the 'Retry' button

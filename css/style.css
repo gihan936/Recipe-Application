@@ -114,7 +114,7 @@ footer {
 }
 
 #hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    background: url('../images/hero-image.jpg') no-repeat center center/cover;
     color: #fff;
     padding: 50px 20px;
     text-align: center;
@@ -374,6 +374,22 @@ footer {
     background: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
+}
+
+#quit-button {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background:  #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease;
+}
+
+#quit-button:hover {
+    background-color: #d32f2f; 
 }
 
 #rating-container {
