@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website - Cooking Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/quiz.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Logo" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="quiz.html">Cooking Quiz</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Test Your Cooking Knowledge!</h1>
+        <div id="quiz-container">
+            <div id="question-container"></div>
+            <button id="next-button">Next</button>
+        </div>
+        <div id="result-container" style="display:none;">
+            <h2>Your Score: <span id="score"></span>/10</h2>
+            <div id="rating-container">
+                <h3>Rate the Quiz:</h3>
+                <div id="stars">
+                    <span class="star" data-value="1">&#9733;</span>
+                    <span class="star" data-value="2">&#9733;</span>
+                    <span class="star" data-value="3">&#9733;</span>
+                    <span class="star" data-value="4">&#9733;</span>
+                    <span class="star" data-value="5">&#9733;</span>
+                </div>
+                <p id="rating-message"></p>
+            </div>
+            <button id="retry-button">Retry Quiz</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-address">
+                <h3>Our Address</h3>
+                <p>1234 Chantilly Lane,<br> Kitchener, CO 56789</p>
+            </div>
+            <div class="footer-hours">
+                <h3>Opening Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                <p>Saturday: 10:00 AM - 4:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+            <div class="footer-map">
+                <h3>Find Us</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.978443415275!2d-122.419418284681!3d37.77492927975964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f9f8c6c95%3A0x7bb7bfbf0d2a2920!2s1234%20Recipe%20Lane%2C%20San%20Francisco%2C%20CA%2094180!5e0!3m2!1sen!2sus!4v1644938202381!5m2!1sen!2sus"
+                    width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <p>&copy; 2024 Recipe Website</p>
+    </footer>
+</body>
+</html>
