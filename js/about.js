@@ -1,5 +1,13 @@
 // Rajni 8996051
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialize Accordion
+    $("#accordion").accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: "content"
+    });
+
+    // Team Members Data
     const teamMembers = [
         { name: 'John Doe', role: 'Chef', img: 'images/team1.jpg', bio: 'John is a master chef with over 20 years of experience.' },
         { name: 'Jane Smith', role: 'Nutritionist', img: 'images/team2.jpg', bio: 'Jane is a certified nutritionist with a passion for healthy eating.' },
@@ -66,22 +74,5 @@ document.addEventListener('DOMContentLoaded', () => {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
-    });
-
-    // Theme Switcher functionality
-    const themeSwitcher = document.createElement('button');
-    themeSwitcher.textContent = 'Change Theme';
-    themeSwitcher.style.position = 'fixed';
-    themeSwitcher.style.top = '10px';
-    themeSwitcher.style.right = '20px';
-    themeSwitcher.style.padding = '10px';
-    themeSwitcher.style.background = '#ff6600';
-    themeSwitcher.style.color = '#fff';
-    themeSwitcher.style.border = 'none';
-    themeSwitcher.style.cursor = 'pointer';
-    document.body.appendChild(themeSwitcher);
-
-    themeSwitcher.addEventListener('click', () => {
-        document.body.classList.toggle('dark-theme');
     });
 });

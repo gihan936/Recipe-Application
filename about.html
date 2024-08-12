@@ -1,4 +1,4 @@
-<!--Rajni 8996051-->>
+<!--Rajni 8996051-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Website - About</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -27,37 +28,38 @@
 
     <main>
         <h1>About Us</h1>
-        <section id="mission">
-            <h2>Our Mission</h2>
-            <p>At Recipe Website, our mission is to inspire and empower home cooks with delicious, easy-to-follow
-                recipes that bring joy to every meal. We believe that cooking should be a delightful experience, filled
-                with creativity and love.</p>
-        </section>
-
-        <section id="history">
-            <h2>Our History</h2>
-            <p>Founded in 2024, Recipe Website started as a small blog sharing favorite family recipes. Over the years,
-                we have grown into a comprehensive platform with thousands of recipes, tips, and cooking guides to help
-                you create wonderful dishes in your kitchen.</p>
-        </section>
-
-        <section id="team">
-            <h2>Meet Our Team</h2>
-            <p>Our dedicated team of culinary experts and food lovers works tirelessly to bring you the best recipes and
-                cooking tips. Learn more about the people behind the scenes:</p>
-            <!-- JavaScript will dynamically populate this section with team members's images -->
-        </section>
-
-        <section id="values">
-            <h2>Our Values</h2>
-            <ul>
-                <li><strong>Quality:</strong> We are committed to providing high-quality, tested recipes.</li>
-                <li><strong>Creativity:</strong> We encourage innovation in the kitchen and love experimenting with new
-                    ingredients and techniques.</li>
-                <li><strong>Community:</strong> We believe in the power of sharing food and recipes to bring people
-                    together.</li>
-            </ul>
-        </section>
+        <div id="accordion">
+            <h3>Our Mission</h3>
+            <div>
+                <p>At Recipe Website, our mission is to inspire and empower home cooks with delicious, easy-to-follow
+                    recipes that bring joy to every meal. We believe that cooking should be a delightful experience,
+                    filled with creativity and love.</p>
+            </div>
+            <h3>Our History</h3>
+            <div>
+                <p>Founded in 2024, Recipe Website started as a small blog sharing favorite family recipes. Over the
+                    years, we have grown into a comprehensive platform with thousands of recipes, tips, and cooking
+                    guides to help you create wonderful dishes in your kitchen.</p>
+            </div>
+            <h3>Meet Our Team</h3>
+            <div>
+                <p>Our dedicated team of culinary experts and food lovers works tirelessly to bring you the best recipes
+                    and cooking tips. Learn more about the people behind the scenes:</p>
+                <div id="team">
+                    <!-- JavaScript will dynamically populate this section with team members' images and their designation-->
+                </div>
+            </div>
+            <h3>Our Values</h3>
+            <div>
+                <ul>
+                    <li><strong>Quality:</strong> We are committed to providing high-quality, tested recipes.</li>
+                    <li><strong>Creativity:</strong> We encourage innovation in the kitchen and love experimenting with
+                        new ingredients and techniques.</li>
+                    <li><strong>Community:</strong> We believe in the power of sharing food and recipes to bring people
+                        together.</li>
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -82,6 +84,8 @@
         <p>&copy; 2024 Recipe Website</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/about.js"></script>
 </body>
 
