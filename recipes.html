@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a variety of delicious recipes with our easy-to-follow guides.">
+    <meta property="og:title" content="Recipe Website - Recipes">
+    <meta property="og:description" content="Explore a variety of delicious recipes with our easy-to-follow guides.">
+    <meta property="og:image" content="images/hero-bg.jpg">
     <title>Recipe Website - Recipes</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <!-- Made by Twisha shastri || Student_id-8989112  -->
     <header>
         <div class="header-container">
             <img src="images/logo.png" alt="Logo" id="logo">
@@ -14,6 +20,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="quiz.html">Cooking Quiz</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -22,36 +29,74 @@
     </header>
     <main>
         <h1>Our Recipes</h1>
+        
+        <!-- Search and Filter Section -->
+        <div id="search-filters">
+            <input type="text" id="ingredient-search" placeholder="Search by ingredient...">
+            <select id="cuisine-filter">
+                 <!-- Add options for filter -->
+                <option value="">Select Cuisine</option>
+                <option value="Italian">Italian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Indian">Indian</option>
+                <option value="Mexican">Mexican</option>
+               
+            </select>
+            <select id="dietary-filter">
+                <!-- Add  options for dietary filter -->
+                <option value="">Select Dietary Preference</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Gluten-Free">Gluten-Free</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Contains Dairy">Contains Dairy</option>
+                <option value="Contains Meat">Non-Veg</option>
+                
+            </select>
+        </div>
+        <div id="no-recipes-message" style="display: none;">Sorry, no recipes found.</div>
+
+        <!-- Recipe List Section -->
         <div id="recipe-list">
-            <!-- JavaScript will dynamically populate this section -->
+            <div class="recipe-item">
+                <div class="recipe-image-container">
+                    <img src="images/Spaghetti-Carbonara.jpg" alt="Spaghetti Carbonara">
+                </div>
+                <h3>Spaghetti Carbonara</h3>
+                <p>A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.</p>
+                <button data-id="1">View Details</button>
+            </div>
+            <!-- More recipe items will be dynamically added here -->
         </div>
     </main>
     <footer>
         <div class="footer-content">
             <div class="footer-address">
                 <h3>Our Address</h3>
-                <p>1234 chantilly Lane,<br> Kitchener, CO 56789</p>
+                <p>1234 Chantilly Lane,<br> Kitchener, CO 56789</p>
             </div>
             <div class="footer-hours">
                 <h3>Opening Hours</h3>
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 4:00 PM</p>
-                <p>Sunday: Closed</p>
+                <p>Mon - Fri: 9am - 5pm<br>Sat - Sun: 10am - 4pm</p>
             </div>
             <div class="footer-map">
                 <h3>Find Us</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.978443415275!2d-122.419418284681!3d37.77492927975964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f9f8c6c95%3A0x7bb7bfbf0d2a2920!2s1234%20Recipe%20Lane%2C%20San%20Francisco%2C%20CA%2094180!5e0!3m2!1sen!2sus!4v1644938202381!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.9073511886096!2d-77.03919108465065!3d38.89511097957031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b5b78e83a8e7%3A0xa2dc7f947a07093b!2s1234%20Chantilly%20Ln%2C%20Kitchener%2C%20CO%2056789!5e0!3m2!1sen!2sus!4v1630458346862!5m2!1sen!2sus" width="300" height="200" allowfullscreen="" loading="lazy"></iframe>
             </div>
+        </div>
+        <div>
+            <p>This page is created by <b>Twisha Shastri</b> as part of <b>JavaScript Programming Group Project </b></p>
         </div>
         <p>&copy; 2024 Recipe Website</p>
     </footer>
-    <!-- Recipe Details Modal -->
-    <div id="recipe-modal" class="modal">
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal" aria-hidden="true">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="recipe-title"></h2>
-            <img id="recipe-image" src="" alt="" />
-            <p id="recipe-description"></p>
+            <span class="close" aria-label="Close">&times;</span>
+            <h2 id="recipe-title">Recipe Title</h2>
+            <img id="recipe-image" src="" alt="Recipe Image">
+            <p id="recipe-description">Recipe Description</p>
+            <p id="recipe-ingredients">Ingredients: </p>
+            <p id="recipe-instructions">Instructions: </p>
         </div>
     </div>
     <script src="js/recipes.js"></script>
